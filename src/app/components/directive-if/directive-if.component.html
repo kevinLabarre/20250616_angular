@@ -14,25 +14,31 @@
 
   <!-- Exemple avec un tableau qui a des users -->
   @if(users.length > 0){
-  <p>Users contient des utilisateurs</p>
+  @for(user of users ; track user.id ){
+  <ul>
+    <li>id : {{user.id + 1}} | nom: {{user.name}}</li>
+    <li>id : {{displayId(user.id)}} | nom: {{user.name}}</li>
+  </ul> }
   } @else() {
   <p>attention<strong>Users non chargées</strong></p>
   }
 
   <!-- Meme Exemple avec un tableau vide -->
   @if(usersEmpty.length > 0){
-  <p>Users contient des utilisateurs</p>
+
+
+  @for(user of users ; track user.id ){
+  <ul>
+    <li>id : {{user.id + 1}} | nom: {{user.name}}</li>
+    <li>id : {{displayId(user.id)}} | nom: {{user.name}}</li>
+  </ul>
+  }
   } @else() {
   <p>attention! <strong>Users non chargées</strong></p> }
 
 
 
-  <ul>
-    <li>1: John</li>
-    <li>2: Jane</li>
-    ........
 
-  </ul>
 
 
 
