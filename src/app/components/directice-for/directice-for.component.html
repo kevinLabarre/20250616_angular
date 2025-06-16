@@ -1,0 +1,16 @@
+<section>
+  <h1>La directive for</h1>
+
+  @for(toDo of myList ; track $index ; let i = $index) {
+  <p> index: {{i + 1}} _ élément: {{toDo}}</p>
+  }
+
+  @if(myListEmpty){
+  @for(toDo of myListEmpty ; track $index ; let i = $index) {
+  <p> index: {{i + 1}} _ élément: {{toDo}}</p>
+  } @empty {
+  <p><strong>La liste est vide</strong></p> }
+  }
+
+
+</section>

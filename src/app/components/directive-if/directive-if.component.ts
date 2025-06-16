@@ -19,6 +19,4 @@ export class DirectiveIfComponent {
 
   usersEmpty = [];
 
-
-
 }

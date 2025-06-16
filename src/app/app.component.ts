@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { User as UserModel } from './models/user.model';
 import { User } from './interfaces/user.interface';
 import { DirectiveIfComponent } from "./components/directive-if/directive-if.component";
+import { DirecticeForComponent } from "./components/directice-for/directice-for.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DirectiveIfComponent],
+  imports: [DirectiveIfComponent, DirecticeForComponent],
   // template: `
   //   <section>
   //     <h1>Bienvenue sur mon application angular !</h1>
