@@ -24,11 +24,10 @@ export class User {
     this.accountNumber = accountNumber  // En passant par le setter
   }
 
-  displayUser() {
-    console.log("User: " + this.firstName + ", age: " + this.age);
-
-    // Equivalent à la ligne ci-dessus
-    console.log(`User: ${this.firstName}, age: ${this.age}`)
+  displayUser(): string {
+    const userText = `User: ${this.firstName}, age: ${this.age}`
+    console.log(userText);
+    return userText
   }
 
   get nameAndAge() {

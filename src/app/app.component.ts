@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { User as UserModel } from './models/user.model';
 import { User } from './interfaces/user.interface';
+import { DirectiveIfComponent } from "./components/directive-if/directive-if.component";
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [DirectiveIfComponent],
   // template: `
   //   <section>
   //     <h1>Bienvenue sur mon application angular !</h1>
@@ -61,5 +62,8 @@ export class AppComponent {
     this.user2.accountNumber = 1234
   }
 
+  // displayUser() {
+  //   return this.user2.firstName + " " + this.user2.age
+  // }
 
 }

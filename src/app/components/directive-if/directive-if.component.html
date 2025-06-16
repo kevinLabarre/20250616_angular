@@ -1,0 +1,29 @@
+<section>
+  <h1>La directive if</h1>
+
+  @if (displayText) {
+  <p>Mon texte à afficher</p>
+  }
+
+  @if (displayText) {
+  <p>Mon texte à afficher</p>
+  } @else {
+  <p>Pas le droit d'afficher le texte</p>
+  }
+
+
+  <!-- Exemple avec un tableau qui a des users -->
+  @if(users.length > 0){
+  <p>Users contient des utilisateurs</p>
+  } @else() {
+  <p>attention<strong>Users non chargées</strong></p>
+  }
+
+  <!-- Meme Exemple avec un tableau vide -->
+  @if(usersEmpty.length > 0){
+  <p>Users contient des utilisateurs</p>
+  } @else() {
+  <p>attention! <strong>Users non chargées</strong></p> }
+
+
+</section>
