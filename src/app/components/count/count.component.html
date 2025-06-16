@@ -1,0 +1,7 @@
+<section>
+  <h1>Mon compteur</h1>
+  <p>{{count}}</p>
+  <button (click)="handleIncrement()">incrémenter +1</button>
+  <button (click)="handleDecrement()">décrémenter -1</button>
+</section>
+<app-count-children [countChildren]="count" />

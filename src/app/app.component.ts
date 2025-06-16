@@ -4,10 +4,11 @@ import { User } from './interfaces/user.interface';
 import { DirectiveIfComponent } from "./components/directive-if/directive-if.component";
 import { DirecticeForComponent } from "./components/directice-for/directice-for.component";
 import { PropertyBindingAndEventBindingComponent } from "./components/property-binding-and-event-binding/property-binding-and-event-binding.component";
+import { CountComponent } from "./components/count/count.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent],
+  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent, CountComponent],
   // template: `
   //   <section>
   //     <h1>Bienvenue sur mon application angular !</h1>
