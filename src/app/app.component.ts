@@ -5,10 +5,11 @@ import { DirectiveIfComponent } from "./components/directive-if/directive-if.com
 import { DirecticeForComponent } from "./components/directice-for/directice-for.component";
 import { PropertyBindingAndEventBindingComponent } from "./components/property-binding-and-event-binding/property-binding-and-event-binding.component";
 import { CountComponent } from "./components/count/count.component";
+import { InputComponent } from "./components/input/input.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent, CountComponent],
+  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent, CountComponent, InputComponent],
   // template: `
   //   <section>
   //     <h1>Bienvenue sur mon application angular !</h1>

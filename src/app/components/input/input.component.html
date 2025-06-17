@@ -1,0 +1,16 @@
+<section>
+  <h1>Formulaire avec "NgModel"</h1>
+
+  <input type="text" [(ngModel)]="inputValue" (ngModelChange)="handleChange()" />
+
+  <p>valeur de l'input : {{inputValue}}</p>
+
+  <input type="checkbox" [(ngModel)]="checkValue" />
+
+  @if(checkValue){
+  <p>Case cochée</p>
+  } @else {
+  <p>Case non cochée</p>
+  }
+
+</section>

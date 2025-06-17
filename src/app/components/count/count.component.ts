@@ -22,4 +22,8 @@ export class CountComponent {
     this.count--;
   }
 
+  countChange(newCount: number) {
+    this.count = newCount
+  }
+
 }

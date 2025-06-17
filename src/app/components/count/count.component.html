@@ -4,4 +4,5 @@
   <button (click)="handleIncrement()">incrémenter +1</button>
   <button (click)="handleDecrement()">décrémenter -1</button>
 </section>
-<app-count-children [countChildren]="count" />
+
+<app-count-children [countChildren]="count" (countChange)="countChange($event)" />
