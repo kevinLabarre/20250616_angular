@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
+import { TableauComponent } from "../tableau/tableau.component";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-exercice',
-  imports: [],
+  imports: [TableauComponent, FormsModule],
   templateUrl: './exercice.component.html',
   styleUrl: './exercice.component.css'
 })
 export class ExerciceComponent {
 
   constructor() { }
+
+  displayHorsStock: boolean = true;
 
   produits: any[] = [
     { id: 1, nom: 'Pomme', quantite: 0, type: 'fruit', prix: 1.2 },
@@ -21,8 +25,22 @@ export class ExerciceComponent {
     { id: 8, nom: 'Brocoli', quantite: 0, type: 'legume', prix: 1.8 }
   ];
 
-  // J'ai trier pour garder tous les fruits
-  fruits = this.produits.filter((produit) => produit.type === "fruit")
 
+  get fruits() {
+    if (this.displayHorsStock) {
+      //Trie pour garder QUE les fruits
+      return this.produits.filter((produit) => produit.type === "fruit")
+    } else {
+      return this.produits.filter((produit) => produit.type === "fruit" && produit.quantite > 0)
+    }
+  }
+
+  get legumes() {
+    if (this.displayHorsStock) {
+      return this.produits.filter((produit) => produit.type === "legume")
+    } else {
+      return this.produits.filter((produit) => produit.type === "legume" && produit.quantite > 0)
+    }
+  }
 
 }

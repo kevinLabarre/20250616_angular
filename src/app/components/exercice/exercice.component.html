@@ -9,4 +9,9 @@
     - Ajouter une case à cocher pour masquer/afficher les produits qui ne sont plus en stock
   </pre>
 
+  <input type="checkbox" [(ngModel)]="displayHorsStock" />
+
+  <app-tableau [produits]="fruits" />
+  <app-tableau [produits]="legumes" />
+
 </section>
