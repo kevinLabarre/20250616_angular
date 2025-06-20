@@ -1,0 +1,16 @@
+<section>
+  <h1>Formulaire</h1>
+
+  <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+
+    <input type="text" placeholder="mail" formControlName="login">
+    @if(displayLoginRequiredError() && loginTouched){
+    <p>Champ requis</p>
+    }
+    <input type="text" placeholder="mot de passe" formControlName="password">
+
+    <button type="submit">Soumettre</button>
+  </form>
+
+
+</section>

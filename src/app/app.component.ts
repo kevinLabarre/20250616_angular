@@ -7,10 +7,11 @@ import { PropertyBindingAndEventBindingComponent } from "./components/property-b
 import { CountComponent } from "./components/count/count.component";
 import { InputComponent } from "./components/input/input.component";
 import { ExerciceComponent } from "./components/exercice/exercice.component";
+import { FormComponent } from "./components/form/form.component";
 
 @Component({
   selector: 'app-root',
-  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent, CountComponent, InputComponent, ExerciceComponent],
+  imports: [DirectiveIfComponent, DirecticeForComponent, PropertyBindingAndEventBindingComponent, CountComponent, InputComponent, ExerciceComponent, FormComponent],
   // template: `
   //   <section>
   //     <h1>Bienvenue sur mon application angular !</h1>
